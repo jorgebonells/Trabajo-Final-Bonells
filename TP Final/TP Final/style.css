@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#botmaps {
+  color:rgb(13, 21, 246)
+  }
+#botdispo {
+  color:chocolate
+}
+
+
+/* Estilo para el encabezado */
+header {
+  height: 300px;
+  padding: 30px;
+  text-align: left;
+  font-size: 35px;
+  color: white;
+  background: #7C7A81;
+  background: -moz-linear-gradient(left, #7C7A81 0%, #103D5B 64%, #144E75 100%);
+  background: -webkit-linear-gradient(left, #7C7A81 0%, #103D5B 64%, #144E75 100%);
+  background: linear-gradient(to right, #7C7A81 0%, #103D5B 64%, #144E75 100%);
+  overflow: hidden;
+  
+}
+#parrafoheader {
+text-align: left;
+color: white;
+font-size: small;
+}
+
+/* Columnas flotantes */
+nav {
+  float: left;
+  width: 30%;
+  height: 900px; /* prueba de atura */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Estilo de menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* prueba  */
+}
+
+/* Columnas sobrantes borrar */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Estilo de footer revisar donde flota */
+footer {
+  
+  left:0px;
+  width:100%;
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive pantallas chicas */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
